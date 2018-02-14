@@ -1,0 +1,110 @@
+/*
+Project Name:
+Client: Leon Noel
+Author: John Fleurimond
+Developer from Resilient Coders. Can't Stop. Won't stop
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+.target {
+  text-decoration: line-through;
+  color: green;
+}
+
+#toDo {
+  position: relative;
+  font-size: 1em;
+  padding: .2em .7em;
+}
+
+#clearCompletedList, #clearList {
+  text-align: center;
+  background-color: #283059;
+  border-radius: .35em;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 1em;
+  padding: .5em 1em;
+  position: relative;
+  left: 17em;
+}
+
+#submitBtn {
+  font-size: 1em;
+  padding: .5em 1em;
+  position: relative;
+  text-align: center;
+  background-color: #283059;
+  border-radius: .35em;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
